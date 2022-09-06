@@ -11,7 +11,7 @@ export default function Search({ searchTerm, setSearchTerm }) {
   return (
     <SearchContainer>
       <SearchIcon onClick={() => setSearchActive(!searchActive)}>
-        <img src="./images/icons/Search.png" alt="Search" />
+        <img src="./images/icons/search.png" alt="Search" />
       </SearchIcon>
       <SearchInput
         value={searchTerm}
