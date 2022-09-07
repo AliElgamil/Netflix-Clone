@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Background } from '../globalVar';
 import * as ROUTES from '../../Constants/Routes';
+import { EmailContext } from '../../Context/context';
 import {
   Base,
   Container,
@@ -22,8 +23,9 @@ import {
 export default function SignupForm() {
   const navigate = useNavigate();
 
+  const { email } = useContext(EmailContext);
   const [firstName, setFirstName] = useState('');
-  const [emailAddress, setEmailAddress] = useState('');
+  const [emailAddress, setEmailAddress] = useState(email);
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 

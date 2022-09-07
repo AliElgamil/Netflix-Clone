@@ -17,6 +17,7 @@ export const Form = styled.form`
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -80,4 +81,13 @@ export const Text = styled.p`
     font-size: 16px;
     line-height: 22px;
   } ;
+`;
+
+export const Alert = styled.p`
+  background-color: #e87c03;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  padding: 15px 20px;
+  color: #fff;
 `;
